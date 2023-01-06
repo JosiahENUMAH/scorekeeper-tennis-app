@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <style>
+        .winner {
+            color: green;
+        }
+
+        .loser {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main class="position-absolute top-50 start-50 translate-middle">
+        <section class="shadow mb-1">
+            <div class="card rounded-0" style="width: 42rem;">
+                <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dGFibGUlMjB0ZW5uaXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    class="card-img-top" alt="" style="height: 20rem">
+                <div class="card-body">
+                    <p class="h6"> <b>Ping Pong Score Keeper</b>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="shadow">
+            <div class="card rounded-0" style="width: 42rem;">
+                <div class="card-body">
+                    <h1 class="fs-1"> <span id="p1display">0</span> to <span id="p2display">0</span> </h1>
+                    <p class="fs-5">Use the buttons below to keep score</p>
+                    <label for="playTo" class="h2"> Playing To</label>
+                    <select id="playTo" class="h6 ps-4 p-2 form-select-inline rounded-pill"
+                        aria-label="Default select example" style="width: auto;">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section class="shadow">
+            <div class="container-fluid">
+                <div class=" row">
+                    <!-- <div class="card-footer d-flex justify-content-center" style="width: 40rem;"> -->
+                    <button id="p1btn" type="button" class="col btn btn-success btn-lg rounded-0">+1 Player One</button>
+                    <button id="p2btn" type="button" class="col btn btn-primary btn-lg rounded-0">+1 Player Two</button>
+                    <button id="resetbtn" type="button" class="col btn btn-danger btn-lg rounded-0">Reset</button>
+                </div>
+                <!-- </div> -->
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="myapp.js"></script>
+</body>
+
+</html>
